@@ -5,7 +5,6 @@ import useData from "./hooks/useData";
 const Colleges = () =>{
    const [college] = useData();
    const [showAll, setShowAll] = useState(false);
-   const [searchText, setsearchText] = useState("");
 
    const handleShowAll = () => {
       setShowAll(true);

@@ -1,8 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
+import Swal from "sweetalert2";
 
-const AdmissonCard = ({ card, isButtonDisabled, onButtonClick }) => {
+const AdmissonCard = ({ card}) => {
+  const {user}=useContext(AuthContext)
+
+  const navigate = useNavigate();
+  const location = useLocation();
   const {
     _id,
     collegeName,
@@ -16,12 +21,23 @@ const AdmissonCard = ({ card, isButtonDisabled, onButtonClick }) => {
     admissionProcess,
   } = card;
 
-  const [isDisabled, setIsDisabled] = useState(false);
+  const [isButtonClicked, setButtonClicked] = useState(false); // Add state variable
 
-  const handleButtonClick = () => {
-    setIsDisabled(true); // Disable the button locally
-    onButtonClick(); // Notify the parent component that a button is clicked
-  };
+
+
+  const handleAddToAdmit = card=>{
+    console.log(card);
+    if(!user){
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please Login!",
+      });
+      navigate('/login', {state: {from: location}})
+      setButtonClicked(true);
+
+    }
+  }
 
   return (
     <div className="bg-blue-100 p-6 rounded shadow-lg my-5">
@@ -37,13 +53,13 @@ const AdmissonCard = ({ card, isButtonDisabled, onButtonClick }) => {
       <p className="text-gray-700 ">Research Number: {numberOfResearch}</p>
 
       <Link to={`/enroll/${_id}`}>
-        <button
-          onClick={handleButtonClick}
-          disabled={isDisabled || isButtonDisabled}
+      <span onClick={() => handleAddToAdmit(card)}>  <button
           type="button"
-          className="font-medium  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-full shadow-md text-white bg-blue-900">
-          Apply Now
-        </button>
+          className="font-medium  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-full shadow-md text-white bg-blue-900"
+          disabled={isButtonClicked} 
+        >
+            {isButtonClicked ? "Applied" : "Apply Now"}
+        </button></span>
       </Link>
     </div>
   );

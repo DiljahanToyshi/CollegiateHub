@@ -2,7 +2,7 @@ import { useContext,useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { AuthContext } from "../providers/AuthProvider";
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const img_hosting_token = import.meta.env.VITE_Image_Upload_token;
 
@@ -10,7 +10,7 @@ const AdmitCollege = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false); 
   const { register, handleSubmit, reset } = useForm();
   const{user}= useContext(AuthContext);
-
+const navigate = useNavigate()
   const { id } = useParams();
   
   const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`;
@@ -63,7 +63,7 @@ const AdmitCollege = () => {
                 icon: 'success',
                 title: 'Enrolled successfully'
               })  
-              reset();       }
+              reset();  navigate('/mycollege')     }
         })
         }
       });
@@ -147,7 +147,7 @@ type="email"
           </label>
           <input
             type="file"
-            {...register("image", { required: false })}
+            {...register("image", { required: true })}
             className="file-input file-input-bordered focus:outline-blue-900 w-full "
           />
         </div>

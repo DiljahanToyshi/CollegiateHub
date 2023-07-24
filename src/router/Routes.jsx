@@ -10,6 +10,7 @@ import Profile from '../Component/Profile/Profile'
  import Register from '../Component/Pages/Register'
 import AdmitCollege from '../Component/Pages/AdmitCollege'
 import Colleges from '../Component/Pages/Colleges'
+import PrivateRoute from './PrivateRoute'
 export const router = createBrowserRouter([
     {
       path:'/',
@@ -49,7 +50,7 @@ export const router = createBrowserRouter([
         },
         {
           path:'/enroll/:id',
-          element:<AdmitCollege></AdmitCollege>
+          element:<PrivateRoute><AdmitCollege></AdmitCollege></PrivateRoute>
         }
  ] }
    
