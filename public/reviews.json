@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "643010e0f5a7e52ce1e8fa65",
+        "name": "Jane Doe",
+        "details": "Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "rating": 3
+    },
+    {
+        "_id": "643010f9f5a7e52ce1e8fa66",
+        "name": "John Doe",
+        "details": "I absolutely love being part of Sunrise University! The campus is beautiful, and the faculty is incredibly supportive. The college organizes fantastic events, and the research opportunities are impressive. Highly recommended!",
+        "rating": 2
+    },
+    {
+        "_id": "6430110af5a7e52ce1e8fa67",
+        "name": "MJ Doe",
+        "details": "Moonlight College has been an amazing experience for me. The college offers a great blend of academics and extracurricular activities. The events are always fun, and the faculty is knowledgeable. I'm glad I chose Moonlight College for my education!",
+        "rating": 5
+    },
+    {
+        "_id": "64301123f5a7e52ce1e8fa68",
+        "name": "Sarah Smith",
+        "details": "Star Institute is a top-notch college! The admission process was smooth, and the research facilities are exceptional. The sports facilities are great, and I love the vibrant campus atmosphere. Proud to be a student here!",
+        "rating": 4
+    },
+    {
+        "_id": "6430113af5a7e52ce1e8fa69",
+        "name": "Robert Johnson",
+        "details": "Horizon University has exceeded my expectations in every way. The faculty is approachable and supportive, and the events are exciting. The admission process was straightforward, and the college offers a great learning environment. I'm thrilled to be part of this institution!",
+        "rating": 5
+    }
+]

@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "collegeName": "Eagle University",
+    "admissionDates": "2024-01-05",
+    "events": [
+      "Annual Day Celebrations",
+      "Tech Expo",
+      "Business Summit"
+    ],
+    "researchHistory": [
+      "AI in Healthcare",
+      "Sustainable Agriculture Practices",
+      "Urban Planning and Smart Cities"
+    ],
+    "sports": [
+      "Soccer",
+      "Hockey",
+      "Table Tennis",
+      "Rugby"
+    ],
+    "rating": 4.5,
+    "numberOfResearch": 90,
+    "admissionProcess": "Apply online through the college website and submit required documents.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVq3jfoEXCA2F84dHSmMUTBvNzYn6U33zm75bzZjGbkg&s"
+  },
+  {
+    "id": 2,
+    "collegeName": "Harmony College",
+    "admissionDates": "2024-02-15",
+    "events": [
+      "Cultural Fest",
+      "Science Congress",
+      "Entrepreneurship Workshop"
+    ],
+    "researchHistory": [
+      "Gender Equality Studies",
+      "Renewable Energy Innovations",
+      "Social Media Impact on Society"
+    ],
+    "sports": [
+      "Volleyball",
+      "Cricket",
+      "Basketball",
+      "Swimming"
+    ],
+    "rating": 4.2,
+    "numberOfResearch": 75,
+    "admissionProcess": "Submit the online application form and appear for an entrance exam.",
+    "image": "https://i.ibb.co/rdWwGLf/download-1.jpg"
+  },
+  {
+    "id": 3,
+    "collegeName": "Pinnacle Institute",
+    "admissionDates": "2024-01-20",
+    "events": [
+      "sports",
+      "Carnival",
+      "Tech Symposium",
+      "Literary Conference"
+    ],
+    "researchHistory": [
+      "AI Ethics and Governance",
+      "Environmental Conservation Strategies",
+      "Advancements in Nanotechnology"
+    ],
+    "sports": [
+      "Tennis",
+      "Badminton",
+      "Athletics",
+      "Squash"
+    ],
+    "rating": 4.9,
+    "numberOfResearch": 150,
+    "admissionProcess": "Admission based on academic performance and interview.",
+    "image": "https://i.ibb.co/ydByhMs/MIT-main-jpg.webp"
+  },
+  {
+    "id": 4,
+    "collegeName": "Acme University",
+    "admissionDates": "2024-02-10",
+    "events": [
+      "Art Exhibition",
+      "Hackathon",
+      "Music Fest"
+    ],
+    "researchHistory": [
+      "Climate Change Mitigation",
+      "Data Privacy and Cybersecurity",
+      "Medical Breakthroughs in Neuroscience"
+    ],
+    "sports": [
+      "Football",
+      "Basketball",
+      "Chess",
+      "Swimming"
+    ],
+    "rating": 4.7,
+    "numberOfResearch": 110,
+    "admissionProcess": "Admission based on academic performance and interview.",
+    "image": "https://i.ibb.co/rdWwGLf/download-1.jpg"
+  },
+  {
+    "id": 5,
+    "collegeName": "Zenith College",
+    "admissionDates": "2024-02-20",
+    "events": [
+      "Fashion Show",
+      "Science Fair",
+      "Innovation Summit"
+    ],
+    "researchHistory": [
+      "Space Exploration and Astrophysics",
+      "Sustainable Architecture",
+      "Advancements in Quantum Computing"
+    ],
+    "sports": [
+      "Cricket",
+      "Hockey",
+      "Table Tennis",
+      "Volleyball"
+    ],
+    "rating": 4.4,
+    "numberOfResearch": 80,
+    "admissionProcess": "Merit-based admission through an online application.",
+    "image": "https://i.ibb.co/rdWwGLf/download-1.jpg"
+  },
+  {
+    "id": 6,
+    "collegeName": "Athena Institute",
+    "admissionDates": "2024-01-25",
+    "events": [
+      "Dance Competition",
+      "Tech Symposium",
+      "Leadership Summit"
+    ],
+    "researchHistory": [
+      "Education Reforms and Access",
+      "Renewable Energy Innovations",
+      "Social Media and Mental Health"
+    ],
+    "sports": [
+      "Soccer",
+      "Basketball",
+      "Athletics",
+      "Tennis"
+    ],
+    "rating": 4.6,
+    "numberOfResearch": 100,
+    "admissionProcess": "Merit-based admission through an online application.",
+    "image": "https://i.ibb.co/rdWwGLf/download-1.jpg"
+  },
+  {
+    "id": 7,
+    "collegeName": "Liberty College",
+    "admissionDates": "2024-02-15",
+    "events": [
+      "Cultural Fest",
+      "Tech Expo",
+      "Literary Conference"
+    ],
+    "researchHistory": [
+      "Human Rights and Global Issues",
+      "Clean Energy Solutions",
+      "Advancements in Robotics"
+    ],
+    "sports": [
+      "Volleyball",
+      "Cricket",
+      "Basketball",
+      "Swimming"
+    ],
+    "rating": 4.3,
+    "numberOfResearch": 85,
+    "admissionProcess": "Apply online and participate in a personal interview.",
+    "image": "https://i.ibb.co/mDHbLM3/download.jpg"
+  },
+  {
+    "id": 8,
+    "collegeName": "Innovate University",
+    "admissionDates": "2024-02-10",
+    "events": [
+      "Innovation Fair",
+      "Business Conference",
+      "Art Showcase"
+    ],
+    "researchHistory": [
+      "AI in Healthcare",
+      "Sustainable Urban Development",
+      "Advancements in Biotechnology"
+    ],
+    "sports": [
+      "Tennis",
+      "Badminton",
+      "Athletics",
+      "Squash"
+    ],
+    "rating": 4.8,
+    "numberOfResearch": 130,
+    "admissionProcess": "Admission through an entrance test and interview.",
+    "image": "https://i.ibb.co/ydByhMs/MIT-main-jpg.webp"
+  }
+]
