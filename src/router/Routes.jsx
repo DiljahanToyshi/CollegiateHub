@@ -11,10 +11,13 @@ import Profile from '../Component/Profile/Profile'
 import AdmitCollege from '../Component/Pages/AdmitCollege'
 import Colleges from '../Component/Pages/Colleges'
 import PrivateRoute from './PrivateRoute'
+import ErrorPage from '../Component/ErrorPage'
 export const router = createBrowserRouter([
     {
       path:'/',
       element:<App></App>,
+      errorElement: <ErrorPage></ErrorPage>,
+
       children:[
         {
             path:'/',

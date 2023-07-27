@@ -4,7 +4,7 @@ const ErrorPage = () => {
   const { error, status } = useRouteError()
   return (
     <section className='flex items-center h-screen p-16 bg-gray-100 text-gray-900'>
-      <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
+      <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8 md:mt-10'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 512 512'
@@ -39,7 +39,7 @@ const ErrorPage = () => {
           </p>
           <Link
             to='/'
-            className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'
+            className='px-8 py-3 font-semibold rounded bg-blue-900 text-gray-300'
           >
             Back to homepage
           </Link>

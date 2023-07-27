@@ -7,7 +7,7 @@ const CollegeDetails = () => {
     
   
     useEffect(() => {
-      fetch(`http://localhost:5000/college/${id}`)
+      fetch(`https://collegiate-hub-server.vercel.app/college/${id}`)
         .then((res) => res.json())
         .then((data) => setdetails(data));
     }, []);
@@ -22,9 +22,7 @@ const CollegeDetails = () => {
         numberOfResearch,
         admissionProcess,
       } = details;
-      const e = events.map((value) => (value
-      ))
-      console.log(e)
+      
     return (
         <div className='my-container'>
         {/* Container Box */}
@@ -51,7 +49,7 @@ const CollegeDetails = () => {
               <div className='flex justify-between'>
               <div>
                   <h1 className="text-xl font-bold">Our Events</h1>
-                  {events.map((value) => (
+                  {events?.map((value) => (
                     <li className="text-start" >
                       {value ? value: "Not Found"}
                     </li >
@@ -59,7 +57,7 @@ const CollegeDetails = () => {
                 </div>          
                 <div>
                   <h1 className="text-xl font-bold">Sports</h1>
-                  {sports.map((value) => (
+                  {sports?.map((value) => (
                     <li className="text-start" >
                       {value ? value: "Not Found"}
                     </li >

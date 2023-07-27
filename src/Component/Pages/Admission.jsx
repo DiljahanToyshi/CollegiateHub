@@ -11,7 +11,7 @@ const Admission = () =>{
        Start Your Journey Here   </p>{" "}
        <div className="grid sm:grid-cols-1 md:grid-cols-2  gap-10">
                  {
-                     college.map(card => <AdmissonCard
+                     college?.map(card => <AdmissonCard
                          key={card._id}
                          card={card}
                          

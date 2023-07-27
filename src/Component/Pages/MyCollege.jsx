@@ -6,7 +6,7 @@ const MyCollege = () => {
     const { user } = useContext(AuthContext);
     const [bookings, setBookings] = useState([]);
 
-    const url = `http://localhost:5000/enroll?email=${user?.email}`;
+    const url = `https://collegiate-hub-server.vercel.app/enroll?email=${user?.email}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -27,7 +27,7 @@ const MyCollege = () => {
       Your Dream College   </p>{" "}            <div className="overflow-x-auto w-full">
                
                     {
-                            bookings.map(booking => <AdmitCollegeDetails
+                            bookings?.map(booking => <AdmitCollegeDetails
                                 key={booking._id}
                                 booking={booking}
                             ></AdmitCollegeDetails>)

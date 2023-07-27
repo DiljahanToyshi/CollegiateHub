@@ -4,7 +4,7 @@ const useData = () =>{
     const [college,setCollege]= useState([]);
     const [loading,setLoading] = useState(true)
     useEffect(() => {
-        fetch('http://localhost:5000/college')
+        fetch('https://collegiate-hub-server.vercel.app/college')
         .then(res => res.json())
         .then(data => {
 setCollege(data);

@@ -34,7 +34,7 @@ const navigate = useNavigate()
             college, contactNumber, address,email,image:imgURL
           };
 
-          fetch('http://localhost:5000/enroll', {
+          fetch('https://collegiate-hub-server.vercel.app/enroll', {
             method: 'POST', 
             headers: {
                 'content-type': 'application/json'

@@ -14,9 +14,10 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://collegiate-hub-server.vercel.app/reviews')
             .then(res => res.json())
-            .then(data => setReviews(data))
+            .then(data => {setReviews(data);
+            console.log(data)})
     }, [])
 
     return (
@@ -26,7 +27,7 @@ const Reviews = () => {
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
 
                 {
-                    reviews.map(review => <SwiperSlide
+                    reviews?.map(review => <SwiperSlide
                         key={review._id}
                     >
                         <div className="flex flex-col items-center md:mx-24 sm:my-10 md:my-16 ">
